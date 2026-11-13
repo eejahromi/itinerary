@@ -223,6 +223,18 @@ video {
   line-height: 1.1;
 }
 
+.place h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.place h2 a:hover,
+.place h2 a:focus-visible {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 0.16em;
+}
+
 .note {
   color: var(--muted);
   margin: 6px 0 0;
@@ -234,6 +246,15 @@ video {
 
 .place figure {
   margin: 0;
+}
+
+.place figure > a {
+  display: block;
+  border-radius: 16px;
+}
+
+.place figure > a.photo-pair {
+  display: grid;
 }
 
 .place img {
